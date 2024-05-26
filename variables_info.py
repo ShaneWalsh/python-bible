@@ -2,7 +2,7 @@
 # Numbers
     # dynamiclly typed, you change the type of variable by reassigning it.
     # type(number) to get variable type
-    # 'int' 'float' 'str'
+        # 'int' 'float' 'str' 'bool'
     # Number operators (+ - * / %)
     # Division always returns a float. 16bytes
     # BODMAS Ordering to Math operations.
@@ -73,16 +73,23 @@ print("slice reverse",output[::-1])
 print("slice negative string value",output.strip()[-6]) # position from the end.
 
 
+## Booleans, comparisons (<,>,==,!=,>=,<=), logic (not,same as ! in java, and, or)
+truthy = True != False
+print(type(truthy), truthy)
+d = 5
 
+if truthy:
+    print('must be true')
+elif truthy != True:
+    print('must not be true')
+else:
+    print('must be unknown!')
 
+if not truthy:
+    print('must be false')
 
-
-
-
-
-
-
-
+if (d > 3 and d < 10 and d != 0) or d != 5:
+    print("and/or is working")
 
 
 
