@@ -93,6 +93,24 @@ if (d > 3 and d < 10 and d != 0) or d != 5:
 
 
 
+# List
+our_list = [27,46,-5]
+print(our_list)
+type(our_list)
+
+mixed = ["A","B","C",[1,2,3],"C",True,"Absolute madness"]
+print(mixed[0]+"_"+mixed[1])
+print(mixed[0:4]) # Slice for a new array with the same values. e.g obj references
+
+messy = mixed[0:4]
+messy[3][1] = 4 # This is a change to an Obj, that both lists ref, so ti changes in both.
+print(messy)
+print(mixed)
+print(len(mixed))
+
+del mixed[4] # drop the extra C!
+print(mixed)
+
 
 
 
