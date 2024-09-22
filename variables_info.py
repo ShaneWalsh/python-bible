@@ -93,7 +93,7 @@ if (d > 3 and d < 10 and d != 0) or d != 5:
 
 
 
-# List
+## List - Array []
 our_list = [27,46,-5]
 print(our_list)
 type(our_list)
@@ -110,6 +110,49 @@ print(len(mixed))
 
 del mixed[4] # drop the extra C!
 print(mixed)
+
+mixed = mixed + [2] # add to the end of the array
+mixed = mixed + [[2,2]] # add [] as an element.
+mixed = mixed + list("BCD") # will add all 3 individualy to the list.
+mixed = mixed + list(str(123)) # will add all 3 individualy to the list.
+print(mixed)
+
+# insert at position.
+mixed.insert(1,100); # 1 is index, 100 is the value.
+mixed.append(2) # return type is none NoneType
+mixed.remove(1)
+
+## Tuple - Final ()
+# Similar to a list, but its immutable.
+my_tuple = (1,2,3,"4","D")
+print(my_tuple)
+print(type(my_tuple))
+
+print(my_tuple[0:2])
+a = [1,2,3]
+print(tuple(a))
+D,E,F = [1,2,3]
+
+
+## Dictionaries - Map {}
+# no ordering, no indexing, just key value pairs.
+students = {"jim":25,"ann":31}
+print(students["jim"])
+
+students["shane"] = 32
+students["shane"] = 33
+print(students)
+
+del students["jim"]
+print(students)
+
+keys = list(students.keys())
+values = list(students.values())
+print(keys)
+
+# Tuple of each key value pairing.
+items = list(students.items())
+print(items)
 
 
 
