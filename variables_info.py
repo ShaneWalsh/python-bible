@@ -122,6 +122,12 @@ mixed.insert(1,100); # 1 is index, 100 is the value.
 mixed.append(2) # return type is none NoneType
 mixed.remove(1)
 
+# List Comprehension
+# newlist = [expression for item in iterable if condition == True]
+amazing = [x for x in range(1,11) if x%2==0 ]
+print("Comprehension :", amazing )
+
+
 ## Tuple - Final ()
 # Similar to a list, but its immutable.
 my_tuple = (1,2,3,"4","D")
@@ -149,6 +155,8 @@ print(students)
 keys = list(students.keys())
 values = list(students.values())
 print(keys)
+
+print("All students are {}".format(" ".join(list(students.keys()))))
 
 # Tuple of each key value pairing.
 items = list(students.items())
